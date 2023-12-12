@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - SpeedBoost
+  - SlowPad
+  - PowerUp
+  - Enemy
+  - Checkpoint
+  - AI1
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - groundLayer
+  - Water
+  - UI
+  - Car
+  - SpeedUI
+  - Player
+  - Opponent
+  - Checkpoint
+  - Car1
+  - Car2
+  - Car3
+  - Car4
+  - Car5
+  - Car6
+  - Car7
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

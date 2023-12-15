@@ -8,7 +8,7 @@ public class Countdown : MonoBehaviour
 {
 
     public TextMeshProUGUI CountDown;
-    public GameObject LapTimer;
+    public GameObject RaceManager;
     public CarController3 CarControls;
     public AudioSource CountdownMusic;
 
@@ -34,7 +34,7 @@ public class Countdown : MonoBehaviour
             aiCar.GetComponent<AICarController>().enabled = false;
         }
 
-        LapTimer.GetComponent<TimeScript>().enabled = false;
+        RaceManager.GetComponent<TimeScript>().enabled = false;
         StartCoroutine(CountStart());
     }
 
@@ -61,12 +61,12 @@ public class Countdown : MonoBehaviour
         yield return new WaitForSeconds(1);
         CountDown.enabled = false;
         CountDown.text = "";
-        LapTimer.SetActive(true);
+        RaceManager.SetActive(true);
         CarControls.enabled = true;
 
          foreach(var aiCar in aiCars)
             aiCar.GetComponent<AICarController>().enabled = true;
 
-        LapTimer.GetComponent<TimeScript>().enabled = true;
+        RaceManager.GetComponent<TimeScript>().enabled = true;
     } 
 }

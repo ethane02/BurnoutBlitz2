@@ -19522,7 +19522,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 399185509}
-  - component: {fileID: 399185510}
   m_Layer: 5
   m_Name: LapTimer
   m_TagString: Untagged
@@ -19552,21 +19551,6 @@ RectTransform:
   m_AnchoredPosition: {x: 364.24, y: 133.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &399185510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399185508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a26d5b9608d857a4db18c04247a63037, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  milliBox: {fileID: 1698034129}
-  minuteBox: {fileID: 625137832}
-  secondBox: {fileID: 461341003}
 --- !u!1001 &402324202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29039,7 +29023,6 @@ GameObject:
   - component: {fileID: 659342429}
   - component: {fileID: 659342428}
   - component: {fileID: 659342427}
-  - component: {fileID: 659342431}
   m_Layer: 5
   m_Name: RaceUI
   m_TagString: Untagged
@@ -29139,24 +29122,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &659342431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659342426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39b5cfb65d1df1844aedf1726a13dae6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CountDown: {fileID: 1412857149}
-  LapTimer: {fileID: 399185508}
-  CarControls: {fileID: 760183951}
-  CountdownMusic: {fileID: 5615309}
-  aiCars:
-  - {fileID: 52336086}
 --- !u!1 &660615558
 GameObject:
   m_ObjectHideFlags: 0
@@ -64925,6 +64890,8 @@ GameObject:
   - component: {fileID: 1898090793}
   - component: {fileID: 1898090792}
   - component: {fileID: 1898090794}
+  - component: {fileID: 1898090795}
+  - component: {fileID: 1898090796}
   m_Layer: 0
   m_Name: RaceManager
   m_TagString: Untagged
@@ -64949,7 +64916,7 @@ MonoBehaviour:
   LapText: {fileID: 1137827758}
   HalfwayTrigger: {fileID: 2116807054}
   firstLapTrigger: {fileID: 489625016}
-  timescript: {fileID: 399185510}
+  timescript: {fileID: 1898090796}
   racedfinishedUI: {fileID: 1130893772}
 --- !u!4 &1898090793
 Transform:
@@ -64996,6 +64963,39 @@ MonoBehaviour:
   - {fileID: 542730306}
   - {fileID: 1822621051}
   - {fileID: 48485843}
+--- !u!114 &1898090795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898090791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39b5cfb65d1df1844aedf1726a13dae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CountDown: {fileID: 1412857149}
+  RaceManager: {fileID: 1898090791}
+  CarControls: {fileID: 760183951}
+  CountdownMusic: {fileID: 5615309}
+  aiCars:
+  - {fileID: 52336086}
+--- !u!114 &1898090796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898090791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a26d5b9608d857a4db18c04247a63037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  milliBox: {fileID: 1698034129}
+  minuteBox: {fileID: 625137832}
+  secondBox: {fileID: 461341003}
 --- !u!1 &1899252942
 GameObject:
   m_ObjectHideFlags: 0
